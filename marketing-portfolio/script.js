@@ -164,3 +164,14 @@ document.querySelectorAll(".reel-video").forEach((vid) => {
       vid.currentTime = 0;
     });
   });
+
+  document.querySelectorAll('.reel-video').forEach(video => {
+    video.addEventListener('mouseenter', () => {
+      video.play();
+    });
+  
+    video.addEventListener('mouseleave', () => {
+      video.pause();
+      video.currentTime = 0;
+    });
+  });

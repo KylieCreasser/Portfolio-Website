@@ -802,3 +802,162 @@ li{
   line-height: 1.65;
   color: rgba(0,0,0,0.72);
 }
+
+/* ===== CAREER CENTER PAGE LAYOUT ===== */
+
+.project-hero{
+  text-align: center;
+  padding: 90px 20px 40px;
+}
+
+.project-hero h1{
+  max-width: 22ch;
+  margin: 0 auto 14px;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+
+.hero-deck{
+  max-width: 62ch;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.65;
+  color: rgba(0,0,0,0.72);
+}
+
+.hero-meta{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+.pill{
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  background: rgba(0,0,0,0.05);
+  border: 1px solid rgba(0,0,0,0.06);
+  color: rgba(0,0,0,0.75);
+}
+
+.project-section{
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 56px 20px;
+}
+
+.project-section h2{
+  margin: 0 0 14px;
+  letter-spacing: -0.01em;
+}
+
+.project-section p{
+  max-width: 74ch;
+  line-height: 1.75;
+  color: rgba(0,0,0,0.78);
+}
+
+.muted{
+  display: block;
+  margin-top: 6px;
+  font-size: 13px;
+  color: rgba(0,0,0,0.62);
+}
+
+/* Reels: featured + stack */
+.reel-feature{
+  display: grid;
+  grid-template-columns: 1.25fr 0.9fr;
+  gap: 22px;
+  margin-top: 26px;
+  align-items: start;
+}
+
+.reel-card{
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 14px 40px rgba(0,0,0,0.08);
+}
+
+.reel-video{
+  width: 100%;
+  height: auto;
+  display: block;
+  background: rgba(0,0,0,0.04);
+}
+
+.reel-card figcaption{
+  padding: 16px 18px 18px;
+}
+
+.reel-stack{
+  display: grid;
+  gap: 22px;
+}
+
+.reel-card--featured .reel-video{
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+  max-height: 520px;   /* controls featured height */
+  margin: 0 auto;
+}
+
+.reel-card:not(.reel-card--featured) .reel-video{
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+  max-height: 420px;   /* smaller stacked reels */
+  margin: 0 auto;
+}
+
+/* Story section */
+.story-grid{
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr;
+  gap: 22px;
+  margin-top: 26px;
+  align-items: start;
+}
+
+.story-card{
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 14px 40px rgba(0,0,0,0.08);
+}
+
+.story-card img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.story-card figcaption{
+  padding: 16px 18px 18px;
+}
+
+.story-card--wide img{
+  max-height: 420px;
+  object-fit: cover;
+}
+
+/* Asset showcase single tweak */
+.asset-showcase.single{
+  grid-template-columns: 1fr;
+}
+
+/* Mobile */
+@media (max-width: 950px){
+  .reel-feature{
+    grid-template-columns: 1fr;
+  }
+  .story-grid{
+    grid-template-columns: 1fr;
+  }
+}
