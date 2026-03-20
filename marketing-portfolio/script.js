@@ -2,13 +2,24 @@ const openBtn = document.getElementById("openMenu");
 const closeBtn = document.getElementById("closeMenu");
 const overlay = document.getElementById("menuOverlay");
 
-openBtn.addEventListener("click", () => overlay.classList.add("open"));
-closeBtn.addEventListener("click", () => overlay.classList.remove("open"));
+if (openBtn && closeBtn && overlay) {
+  openBtn.addEventListener("click", () => {
+    overlay.classList.add("open");
+    document.body.classList.add("menu-open");
+  });
 
-document.querySelectorAll(".menu-link").forEach(link => {
-  link.addEventListener("click", () => overlay.classList.remove("open"));
-});
+  closeBtn.addEventListener("click", () => {
+    overlay.classList.remove("open");
+    document.body.classList.remove("menu-open");
+  });
 
+  document.querySelectorAll(".menu-link").forEach(link => {
+    link.addEventListener("click", () => {
+      overlay.classList.remove("open");
+      document.body.classList.remove("menu-open");
+    });
+  });
+}
 
 // ----- Interactive ripple canvas (Home only) -----
 const canvas = document.getElementById("bgCanvas");
@@ -164,14 +175,31 @@ document.querySelectorAll(".reel-video").forEach((vid) => {
       vid.currentTime = 0;
     });
   });
+// --- PAGE TRANSITIONS ---
 
-  document.querySelectorAll('.reel-video').forEach(video => {
-    video.addEventListener('mouseenter', () => {
-      video.play();
+window.addEventListener("load", () => {
+  document.body.classList.add("page-loaded");
+});
+
+document.querySelectorAll("a[href]").forEach(link => {
+  const url = link.getAttribute("href");
+
+  // only apply to internal links
+  if (
+    url &&
+    !url.startsWith("#") &&
+    !url.startsWith("mailto") &&
+    !url.startsWith("http")
+  ) {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      document.body.classList.remove("page-loaded");
+      document.body.classList.add("page-exit");
+
+      setTimeout(() => {
+        window.location.href = url;
+      }, 400);
     });
-  
-    video.addEventListener('mouseleave', () => {
-      video.pause();
-      video.currentTime = 0;
-    });
-  });
+  }
+});
