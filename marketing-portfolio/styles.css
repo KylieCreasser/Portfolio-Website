@@ -340,19 +340,19 @@ body.menu-open .menu-btn {
   
   /* ---------- HOME HERO (text on background) ---------- */
   .home-hero{
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 160px 28px 90px;
-    text-align: left;
-  }
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 120px 28px 40px;
+  text-align: left;
+}
   
-  .home-title{
-    font-family: var(--serif, "Fraunces", serif);
-    font-size: clamp(52px, 7vw, 86px);
-    letter-spacing: -0.03em;
-    margin: 0 0 10px 0;
-    color: rgba(0,0,0,0.88);
-  }
+ .home-title{
+  font-family: var(--serif, "Fraunces", serif);
+  font-size: clamp(44px, 6vw, 76px);
+  letter-spacing: -0.03em;
+  margin: 0 0 10px 0;
+  color: rgba(0,0,0,0.88);
+}
   
   .home-subtitle{
     margin: 0 0 26px 0;
@@ -1599,4 +1599,30 @@ body.page-exit {
 
 .reel-card figcaption {
   padding: 16px 18px 18px;
+}
+
+.connect-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 100px 20px 80px;
+}
+
+.connect-buttons {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.build-credit {
+  margin-top: 32px;
+  font-size: 0.95rem;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.heart {
+  color: hotpink;
 }
