@@ -1,88 +1,150 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5CNLZ49B');</script>
-<!-- End Google Tag Manager -->
-    <title>Kylie Creasser | Marketing Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kylie Creasser is an Orlando-based content marketer and creative strategist seeking roles in content, social media, brand marketing, and creative strategy.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Kylie Creasser | Content Marketing + Creative Strategy">
+  <meta property="og:description" content="Orlando-based content marketer and creative strategist with experience in campaigns, social media, video, and brand content.">
+  <meta property="og:url" content="https://kyliecreasser.github.io/Portfolio-Website/">
+  <meta property="og:image" content="https://kyliecreasser.github.io/Portfolio-Website/images/portfolio-share.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Kylie Creasser | Content Marketing & Creative Strategy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
-<body class="home-bg">
-  <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5CNLZ49B"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-<canvas id="bgCanvas"></canvas>
-
-    <nav>
-       <!-- TOP BAR -->
-    <div class="topbar">
-        <div class="brand">Kylie Creasser</div>
-        <a class="linkedin-btn" href="https://www.linkedin.com/in/kyliecreasser" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M6.94 8.5H3.56V20h3.38V8.5ZM5.25 3A1.96 1.96 0 1 0 5.3 6.92 1.96 1.96 0 0 0 5.25 3ZM20.44 12.55c0-3.02-1.61-4.43-3.77-4.43-1.74 0-2.52.96-2.95 1.63V8.5h-3.38V20h3.38v-6.41c0-.34.03-.67.13-.91.27-.67.89-1.36 1.93-1.36 1.36 0 1.91 1.03 1.91 2.54V20H20.44v-7.45Z"/>
-          </svg>
-        </a>
-        <button class="menu-btn" id="openMenu" aria-label="Open menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-            </button>    
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell nav-shell">
+      <a class="brand" href="index.html" aria-label="Kylie Creasser, home">Kylie Creasser</a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="portfolio.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="resume.pdf" target="_blank" rel="noopener">Résumé</a>
+        <a class="nav-cta" href="#contact">Let’s connect</a>
+      </nav>
+      <button class="menu-button" type="button" data-menu-open aria-expanded="false" aria-controls="mobile-menu">Menu</button>
     </div>
-  
-        <!-- FULLSCREEN MENU OVERLAY -->
-    <div class="menu-overlay" id="menuOverlay">
-        <button class="close-btn" id="closeMenu" aria-label="Close menu">✕</button>
-  
-        <div class="menu-links">
-          <a href="index.html" class="menu-link">Home</a>
-          <a href="about.html" class="menu-link">About</a>
-          <a href="portfolio.html" class="menu-link">Portfolio</a>
-          <a href="resume.pdf" target="_blank" class="menu-link resume-link">
-            Resume ↗
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" data-menu aria-hidden="true">
+    <button class="menu-close" type="button" data-menu-close aria-label="Close menu">×</button>
+    <nav aria-label="Mobile navigation">
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="resume.pdf" target="_blank" rel="noopener">Résumé ↗</a>
+      <a href="#contact">Connect</a>
+    </nav>
+  </div>
+
+  <main id="main">
+    <section class="home-hero">
+      <div class="hero-art" aria-hidden="true">
+        <span class="hero-shape bubble-pink bubble-1"></span>
+        <span class="hero-shape bubble-teal bubble-2"></span>
+        <span class="hero-shape bubble-peach bubble-3"></span>
+        <span class="hero-shape bubble-pink bubble-4"></span>
+        <span class="hero-shape bubble-teal bubble-5"></span>
+        <span class="hero-shape bubble-peach bubble-6"></span>
+        <span class="hero-shape bubble-pink bubble-7"></span>
+        <span class="hero-shape bubble-teal bubble-8"></span>
+        <span class="hero-shape bubble-peach bubble-9"></span>
+      </div>
+      <div class="shell hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow">Hello, I’m</p>
+          <h1><span class="gradient-text">Kylie Creasser</span></h1>
+          <p class="hero-role">Content marketer &amp; creative strategist</p>
+          <p class="hero-deck">Based in Orlando, Florida, and seeking entry-level roles in content marketing, social media, brand marketing, and creative strategy.</p>
+          <div class="button-row">
+            <a class="button" href="portfolio.html">Explore selected work</a>
+            <a class="button secondary" href="resume.pdf" target="_blank" rel="noopener">View résumé ↗</a>
+          </div>
+        </div>
+        <div class="hero-portrait" aria-label="Portrait of Kylie Creasser">
+          <img src="headshot.jpg" alt="Kylie Creasser smiling outdoors">
+          <span class="location-note">Orlando, Florida</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="shell proof-section" aria-labelledby="proof-heading">
+      <p class="eyebrow" id="proof-heading">A few numbers I’m proud of</p>
+      <div class="proof-strip">
+        <div class="proof-item"><span class="proof-context">Clothing Closet reel</span><strong>4,299</strong><span class="proof-result">people reached</span></div>
+        <div class="proof-item"><span class="proof-context">Same resource reel</span><strong>161</strong><span class="proof-result">likes</span></div>
+        <div class="proof-item"><span class="proof-context">FedEx collaboration</span><strong>3,521</strong><span class="proof-result">people reached</span></div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="selected-work-heading">
+      <div class="shell">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Selected work</p>
+            <h2 id="selected-work-heading">A few things I’ve worked on.</h2>
+          </div>
+          <p>These two projects show the kind of work I enjoy most: planning the idea, making the content, and seeing what people respond to.</p>
+        </div>
+
+        <div class="work-grid">
+          <a class="work-card secu" href="secu.html">
+            <div class="work-image"><img src="images/secu-flyer.png" alt="SECU Public Fellows campaign flyer"></div>
+            <div class="work-copy">
+              <span class="work-number">01 · Integrated campaign</span>
+              <h3>SECU Public Fellows Campaign</h3>
+              <p>I planned and created a two-part recruitment campaign across social, email, campus screens, and print.</p>
+              <div class="tag-row"><span class="tag">Campaign strategy</span><span class="tag">Social</span><span class="tag">Print</span><span class="tag">Email</span></div>
+            </div>
           </a>
-          <a href="index.html#contact" class="menu-link">Connect</a>
-        </div>
-    
-    </div>
-  </nav>
-    <div class="home-hero">
-        <h1 class="home-title fade-up">Kylie Creasser</h1>
-        <p class="home-subtitle fade-up fade-up-delay-1">
-          Marketing student, creative strategist, and builder of thoughtful digital experiences.
-        </p>
-      
-        <div class="home-actions fade-up fade-up-delay-2">
-          <a class="home-btn" href="portfolio.html">View Portfolio</a>
-        </div>
-      </div>
-    
-      <div class="connect-section fade-up fade-up-delay-3" id="contact">
-        <h2>Let’s Connect</h2>
-        <p>
-          I’m always open to opportunities in marketing, branding, and creative strategy.
-        </p>
-      
-        <div class="connect-buttons">
-          <a href="mailto:kyliecreasser@gmail.com" class="connect-btn">Email Me</a>
-          <a href="https://www.linkedin.com/in/kyliecreasser" target="_blank" class="connect-btn">LinkedIn</a>
-          <a href="resume.pdf" target="_blank" class="connect-btn">Resume</a>
-        </div>
-        <p class="build-credit">
-        Made with <span class="heart">♥</span> using HTML, CSS, JavaScript, and AI
-      </p>
-      </div>
-      
-    </body>
-    <script src="script.js"></script>
-</html>
-<!--test-->
 
+          <a class="work-card" href="career.html">
+            <div class="work-image"><img src="images/Student Story Blog Header (1).png" alt="UNC Charlotte student story campaign header"></div>
+            <div class="work-copy">
+              <span class="work-number">02 · Content system</span>
+              <h3>Career Center Content</h3>
+              <p>Reels, student stories, campus graphics, and the performance tracking I used to learn what worked.</p>
+              <div class="tag-row"><span class="tag">Short-form video</span><span class="tag">Content strategy</span><span class="tag">Analytics</span></div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section compact" aria-labelledby="capabilities-heading">
+      <div class="shell">
+        <div class="section-heading">
+          <div><p class="eyebrow">What I like doing</p><h2 id="capabilities-heading">I like both the creative and the numbers.</h2></div>
+        </div>
+        <div class="capability-grid">
+          <article class="capability"><h3>Coming up with the angle</h3><p>I enjoy figuring out what will make someone stop, understand the message, and actually care about it.</p></article>
+          <article class="capability"><h3>Making the content</h3><p>I’m comfortable writing, designing, filming, editing, and turning one idea into several different formats.</p></article>
+          <article class="capability"><h3>Seeing what worked</h3><p>I like looking at reach, engagement, timing, and format so the next idea is based on more than a guess.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="shell contact-panel">
+        <p class="eyebrow">Let’s connect</p>
+        <h2>I’m looking for my next marketing role in Orlando.</h2>
+        <p>If you’re hiring for content, social media, brand marketing, or creative strategy, I’d love to talk.</p>
+        <div class="button-row">
+          <a class="button" href="mailto:kyliecreasser@gmail.com">Email Kylie</a>
+          <a class="button" href="https://www.linkedin.com/in/kyliecreasser" target="_blank" rel="noopener">LinkedIn ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-shell"><p>© <span data-year></span> Kylie Creasser. Designed and built with care.</p><div class="footer-links"><a href="mailto:kyliecreasser@gmail.com">Email</a><a href="https://www.linkedin.com/in/kyliecreasser" target="_blank" rel="noopener">LinkedIn</a></div></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
